@@ -83,3 +83,19 @@ console.log(retangulo.altura, "\n", retangulo.largura, "\n", retangulo.CalcularP
 
 //atividade 5
 
+class Conta {
+
+    private saldo: number = 0;
+
+    depositar(valor: number): void {
+        if (valor > 0) this.saldo += valor;
+    }
+
+    consultarSaldo(): number {
+        return this.saldo;
+    }
+
+}
+
+const conta = new Conta("100")
+console.log(conta.saldo)
