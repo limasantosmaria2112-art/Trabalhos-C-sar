@@ -1,5 +1,21 @@
 //atividade 1 
 
+class Pessoa {
+    nome: string;
+    idade: number;
+ 
+
+    constructor (nome: string, idade: number) {
+
+        this.nome = nome;
+        this.idade = idade;
+ }
+
+ }
+const pessoa = new Pessoa ("Marcolas", 16)
+
+console.log(pessoa.nome, "\n", pessoa.idade);
+
 //atividade 2
 
 class Produto{
@@ -21,6 +37,49 @@ console.log(Pepino.nome, "\n", Pepino.preco, "\n", Pepino.estoque, "\n", oleodeb
 
 //atividade 3
 
+class Pessoa {
+    nome: string;
+    nota: number;
+
+    constructor (nome: string, nota: number) {
+        this.nome = nome, this.nota = nota
+    }
+
+    Avaliacao(){
+    
+        if (this.nota >= 6){
+            return"Aprovado"
+        } else {
+            return "Reprovado"
+        }
+
+    }
+ }
+
+
+
+const pessoa = new Pessoa ("Marcolas", 8);
+console.log(pessoa.nome, "\n", pessoa.nota, "\n", pessoa.Avaliacao())
+
 //atividade 4
 
+class Retangulo {
+    altura: number;
+    largura: number;
+
+    constructor(altura: number, largura: number){
+        this.altura=altura;
+        this.largura=largura;
+    }
+
+    CalcularPerimetro() {
+        return(2*(this.altura+this.largura))
+    }
+
+}
+
+const retangulo = new Retangulo (5,5)
+console.log(retangulo.altura, "\n", retangulo.largura, "\n", retangulo.CalcularPerimetro())
+
 //atividade 5
+
